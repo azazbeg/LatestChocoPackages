@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Microsoft</dc:creator>
+  <dc:description>.NET Core is a general purpose development platform maintained by Microsoft and the .NET community on GitHub. It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios.
+
+This package installs the ASP.NET Core Module for IIS, enabling running of ASP.NET Core applications. IIS must be enabled prior to installing this package. ASP.NET Core does not use any managed IIS modules, so no ASP.NET IIS features need to be enabled.
+
+The native installer is instructed to skip installing the .NET Core Runtime (`OPT_NO_RUNTIME=1`) and the ASP.NET Core Runtime and Shared Framework (`OPT_NO_SHAREDFX=1`). The packages [dotnetcore-runtime](https://chocolatey.org/packages/dotnetcore-runtime) and [dotnetcore-aspnetruntime](https://chocolatey.org/packages/dotnetcore-aspnetruntime) should be used to install these runtimes when hosting ["portable"](https://docs.microsoft.com/en-us/dotnet/articles/core/deploying/index) ASP.NET Core applications (which use the machine-wide runtime). Hosting of ["self-contained"](https://docs.microsoft.com/en-us/dotnet/articles/core/deploying/index) ASP.NET Core applications does not require the runtime to be installed, because those applications include the desired runtime as part of their binaries.
+
+The package supports the following parameters (--package-parameters, --params):
+
+- `Passive` - display native installer progress window (may not work on Server Core)
+- `IgnoreMissingIIS` - allow package installation even if IIS is not present (probably useless, as the native installer will not install anything)
+
+Example: cinst -y --params="Quiet IgnoreMissingIIS" dotnet-aspnetcoremodule-v2</dc:description>
+  <dc:identifier>dotnet-aspnetcoremodule-v2</dc:identifier>
+  <version>21.0.26068-preview2</version>
+  <keywords>microsoft .net core runtime redistributable asp.net module ancm iis admin</keywords>
+  <lastModifiedBy>choco, Version=2.5.1.0, Culture=neutral, PublicKeyToken=79d02ea9cad655eb;Microsoft Windows NT 10.0.17763.0;.NET Framework 4.8</lastModifiedBy>
+</coreProperties>

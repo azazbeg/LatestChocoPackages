@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>dotnet-8.0-sdk-4xx</id>
+    <version>8.0.418</version>
+    <title>Microsoft .NET 8.0 SDK feature update 4</title>
+    <authors>Microsoft</authors>
+    <owners>jberezanski,riezebosch</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://rawcdn.githack.com/dotnet/core/290743955c7dec3315e72da5dcd589b2bd177e71/LICENSE</licenseUrl>
+    <projectUrl>https://dot.net/core</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/dotnetcore-chocolatey/dotnetcore-chocolateypackages/5a90ffc61572e8403cb88c325f88cf6989de8c79/icons/dotnetcore.png</iconUrl>
+    <description>.NET is a blazing fast, lightweight and modular platform for creating web applications and services that run on Windows, Linux and Mac.
+
+The SDK includes the runtime and command line tools for creating .NET applications.</description>
+    <summary>The SDK includes the runtime and command line tools for creating .NET applications.</summary>
+    <releaseNotes>##### Software
+[.NET 8.0.24 Release Notes](https://github.com/dotnet/core/blob/main/release-notes/8.0/8.0.24/8.0.24.md)</releaseNotes>
+    <copyright>.NET Foundation and Contributors</copyright>
+    <tags>microsoft .net core runtime redistributable sdk cli admin</tags>
+    <packageSourceUrl>https://github.com/dotnetcore-chocolatey/dotnetcore-chocolateypackages/tree/master/dotnet-X.Y-sdk-Nxx</packageSourceUrl>
+    <docsUrl>https://docs.microsoft.com/dotnet</docsUrl>
+    <bugTrackerUrl>https://www.microsoft.com/net/support</bugTrackerUrl>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.4.0" />
+      <dependency id="vcredist140" version="14.34.31938" />
+    </dependencies>
+  </metadata>
+</package>
